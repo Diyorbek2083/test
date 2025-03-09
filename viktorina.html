@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/viktorina.css">
     <link rel="stylesheet" href="css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
 
@@ -168,7 +169,8 @@
                     <div class="quiz-header">
                         <div class="quiz-info">
                             <span class="category">Dasturlash</span>
-                            <span class="question-count">Savol: <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span></span>
+                            <span class="question-count">Savol: <span id="currentQuestion">1</span>/<span
+                                    id="totalQuestions">10</span></span>
                         </div>
                         <div class="timer">
                             <i class="fas fa-clock"></i>
@@ -378,7 +380,8 @@
                 <div class="footer-section about">
                     <h2 class="logo-text">Online Course</h2>
                     <p>
-                        Maqsadlaringizga erishish va martaba oshirishga yordam beradigan yuqori sifatli onlayn ta'lim va o'quv resurslarini taqdim etish.
+                        Maqsadlaringizga erishish va martaba oshirishga yordam beradigan yuqori sifatli onlayn ta'lim va
+                        o'quv resurslarini taqdim etish.
                     </p>
                     <div class="contact">
                         <span><i class="fas fa-phone"></i> &nbsp; +123 456 7890</span>
@@ -446,12 +449,12 @@
         });
 
         // Animations on scroll
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Fade in elements
             const fadeElements = document.querySelectorAll('.fade-in');
             // Slide in elements
             const slideElements = document.querySelectorAll('.slide-in');
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -459,11 +462,11 @@
                     }
                 });
             }, { threshold: 0.1 });
-            
+
             fadeElements.forEach(element => {
                 observer.observe(element);
             });
-            
+
             slideElements.forEach(element => {
                 observer.observe(element);
             });
@@ -485,34 +488,34 @@
             resultScreen.style.display = 'none';
 
             // Start quiz
-            startBtn.addEventListener('click', function() {
+            startBtn.addEventListener('click', function () {
                 startScreen.style.display = 'none';
                 quizScreen.style.display = 'block';
                 startTimer();
             });
 
             // Next question
-            nextBtn.addEventListener('click', function() {
+            nextBtn.addEventListener('click', function () {
                 // For demo purposes, just show the result screen after clicking next
                 quizScreen.style.display = 'none';
                 resultScreen.style.display = 'block';
             });
 
             // Restart quiz
-            restartBtn.addEventListener('click', function() {
+            restartBtn.addEventListener('click', function () {
                 resultScreen.style.display = 'none';
                 startScreen.style.display = 'block';
             });
 
             // Go to home
-            homeBtn.addEventListener('click', function() {
+            homeBtn.addEventListener('click', function () {
                 resultScreen.style.display = 'none';
                 startScreen.style.display = 'block';
             });
 
             // Select option
             options.forEach(option => {
-                option.addEventListener('click', function() {
+                option.addEventListener('click', function () {
                     // Remove selected class from all options
                     options.forEach(opt => opt.classList.remove('selected'));
                     // Add selected class to clicked option
@@ -524,15 +527,15 @@
             function startTimer() {
                 let timeLeft = 30;
                 timeLeftElement.textContent = timeLeft;
-                
-                const timer = setInterval(function() {
+
+                const timer = setInterval(function () {
                     timeLeft--;
                     timeLeftElement.textContent = timeLeft;
-                    
+
                     if (timeLeft <= 10) {
                         timeLeftElement.classList.add('warning');
                     }
-                    
+
                     if (timeLeft <= 0) {
                         clearInterval(timer);
                         // For demo purposes, just show the result screen when time is up
@@ -545,11 +548,11 @@
             // Category selection
             const categoryCards = document.querySelectorAll('.category-card');
             categoryCards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function () {
                     const category = this.getAttribute('data-category');
-                    document.querySelector('.viktorina-start-screen h2').textContent = 
+                    document.querySelector('.viktorina-start-screen h2').textContent =
                         category.charAt(0).toUpperCase() + category.slice(1) + ' viktorinasi';
-                    
+
                     // Scroll to quiz section
                     document.querySelector('.viktorina-app').scrollIntoView({ behavior: 'smooth' });
                 });
