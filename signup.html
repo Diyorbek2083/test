@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Ro'yxatdan o'tish</h2>
+                <p>Yangi hisob yaratish uchun ma'lumotlaringizni kiriting</p>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="fullname">To'liq ism</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullname" name="fullname" placeholder="To'liq ismingizni kiriting" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Email manzilingizni kiriting" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Parol</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Parolingizni kiriting" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Parolni tasdiqlang</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Parolingizni qayta kiriting" required>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Men <a href="#">foydalanish shartlari</a> va <a href="#">maxfiylik siyosati</a> bilan tanishdim va roziman</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-auth">Ro'yxatdan o'tish</button>
+                <div class="auth-divider">
+                    <span>Yoki</span>
+                </div>
+                <div class="social-auth">
+                    <button type="button" class="btn-social btn-google">
+                        <i class="fab fa-google"></i> Google bilan ro'yxatdan o'tish
+                    </button>
+                    <button type="button" class="btn-social btn-facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook bilan ro'yxatdan o'tish
+                    </button>
+                </div>
+                <div class="auth-footer">
+                    <p>Allaqachon hisobingiz bormi? <a href="/signin.html">Kirish</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

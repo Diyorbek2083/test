@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests - Online Course</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/test.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Desktop Navigation -->
+            <div class="navbar-left">
+                <div class="logo">Online Course</div>
+                <ul class="nav-links">
+                    <li><a href="/index.html" class="nav-item">Home</a></li>
+                    <li><a href="/blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="/about.html" class="nav-item">About</a></li>
+                    <li><a href="/viktoina.html" class="nav-item">Viktarina</a></li>
+                    <li><a href="/courses.html" class="nav-item">Courses</a></li>
+                    <li><a href="/test.html" class="nav-item active">Tests</a></li>
+                    <li><a href="/contact.html" class="nav-item">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right side buttons and profile -->
+            <div class="navbar-right">
+                <a href="/signin.html"><button class="btn btn-explore">Kirsh</button></a>
+                <a href="/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+                <div class="profile">
+                    <div class="avatar">A</div>
+                    <div class="notification">1</div>
+                </div>
+            </div>
+
+            <!-- Mobile header elements -->
+            <div class="mobile-header">
+                <div class="logo">Online Course</div>
+                <div class="mobile-right">
+                    <div class="profile mobile-profile">
+                        <div class="avatar">A</div>
+                        <div class="notification">1</div>
+                    </div>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="/index.html" class="mobile-nav-item">Home</a></li>
+                <li><a href="/blog.html" class="mobile-nav-item">Blog</a></li>
+                <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+                <li><a href="/viktoina.html" class="mobile-nav-item">Viktorina</a></li>
+                <li><a href="/courses.html" class="mobile-nav-item">Courses</a></li>
+                <li><a href="/test.html" class="mobile-nav-item active">Tests</a></li>
+                <li><a href="/contact.html" class="mobile-nav-item">Contact</a></li>
+            </ul>
+            <div class="mobile-buttons">
+                <a href="/signin.html"><button class="btn btn-explore">Kirsh</button></a>
+                <a href="/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Test Hero Section -->
+    <section class="test-hero">
+        <div class="container">
+            <div class="test-hero-content">
+                <h1 class="fade-in">Bilimlaringizni tekshiring</h1>
+                <p class="fade-in">O'z bilimlaringizni tekshirish uchun testlarni yeching va o'z natijalaringizni tahlil qiling</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Categories Section -->
+    <section class="test-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Test kategoriyalari</h2>
+                <p>O'zingizga qiziq bo'lgan yo'nalishni tanlang</p>
+            </div>
+            <div class="categories-tabs fade-in">
+                <button class="tab-btn active" data-category="all">Barchasi</button>
+                <button class="tab-btn" data-category="programming">Dasturlash</button>
+                <button class="tab-btn" data-category="design">Dizayn</button>
+                <button class="tab-btn" data-category="languages">Tillar</button>
+                <button class="tab-btn" data-category="business">Biznes</button>
+                <button class="tab-btn" data-category="marketing">Marketing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests Grid Section -->
+    <section class="tests-grid-section">
+        <div class="container">
+            <div class="tests-grid">
+                <!-- Test Card 1 -->
+                <div class="test-card fade-in" data-category="programming">
+                    <div class="test-image">
+                        <img src="image/test-1.jpg" alt="HTML va CSS test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">HTML va CSS asoslari</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Boshlang'ich</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>20 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>15 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>HTML va CSS asoslari bo'yicha bilimlaringizni tekshiring. Web sahifalar yaratishning asosiy texnologiyalari haqida bilimlaringizni sinab ko'ring.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+
+                <!-- Test Card 2 -->
+                <div class="test-card fade-in" data-category="programming">
+                    <div class="test-image">
+                        <img src="image/test-2.jpg" alt="JavaScript test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">JavaScript asoslari</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>O'rta</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>25 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>20 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>JavaScript dasturlash tili asoslari bo'yicha bilimlaringizni tekshiring. Funksiyalar, o'zgaruvchilar, operatorlar va boshqalar haqida testlarga javob bering.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+
+                <!-- Test Card 3 -->
+                <div class="test-card fade-in" data-category="languages">
+                    <div class="test-image">
+                        <img src="image/test-3.jpg" alt="English test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">Ingliz tili - Pre-Intermediate</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>O'rta</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>30 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>25 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>Ingliz tilini o'rta darajada bilishingizni tekshirish uchun grammatika, leksika va tinglab tushunish bo'yicha testlar.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+
+                <!-- Test Card 4 -->
+                <div class="test-card fade-in" data-category="design">
+                    <div class="test-image">
+                        <img src="image/test-4.jpg" alt="UI/UX test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">UI/UX Dizayn asoslari</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Boshlang'ich</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>15 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>10 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>UI/UX dizayn asoslari bo'yicha bilimlaringizni tekshiring. Ranglar, tipografiya, foydalanuvchi interfeysi elementlari va UX prinsiplari haqida testlar.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+
+                <!-- Test Card 5 -->
+                <div class="test-card fade-in" data-category="business">
+                    <div class="test-image">
+                        <img src="image/test-5.jpg" alt="Business test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">Biznes asoslari</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>O'rta</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>20 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>15 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>Biznes asoslari bo'yicha bilimlaringizni tekshiring. Marketing, buxgalteriya, menejment va tadbirkorlik asoslari bo'yicha testlar.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+
+                <!-- Test Card 6 -->
+                <div class="test-card fade-in" data-category="marketing">
+                    <div class="test-image">
+                        <img src="image/test-6.jpg" alt="Digital Marketing test">
+                    </div>
+                    <div class="test-content">
+                        <h3 class="test-title">Raqamli marketing</h3>
+                        <div class="test-meta">
+                            <div class="test-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Yuqori</span>
+                            </div>
+                            <div class="test-questions">
+                                <i class="fas fa-question-circle"></i>
+                                <span>25 savol</span>
+                            </div>
+                            <div class="test-time">
+                                <i class="fas fa-clock"></i>
+                                <span>20 daqiqa</span>
+                            </div>
+                        </div>
+                        <div class="test-description">
+                            <p>Raqamli marketing bo'yicha bilimlaringizni tekshiring. SEO, SMM, kontekst reklama va marketing strategiyalari haqida testlar.</p>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-start-test">Testni boshlash</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-load-more fade-in">Ko'proq testlar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Testlar qanday ishlaydi</h2>
+                <p>Testlarni yechish jarayoni bilan tanishing</p>
+            </div>
+            <div class="steps-container">
+                <div class="step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3>Kirish yoki ro'yxatdan o'tish</h3>
+                    <p>Testlarni yechish uchun tizimga kirishingiz yoki ro'yxatdan o'tishingiz kerak.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="step-number">2</div>
+                    <h3>Testni tanlash</h3>
+                    <p>O'zingizga kerakli testni tanlang va "Testni boshlash" tugmasini bosing.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3>Testni yechish</h3>
+                    <p>Savollarga javob bering va tasdiqlash tugmasini bosing.</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="step-number">4</div>
+                    <h3>Natijalarni ko'rish</h3>
+                    <p>Test yakunlangandan so'ng natijalaringizni ko'ring va tahlil qiling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tests Section -->
+    <section class="popular-tests">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Mashhur testlar</h2>
+                <p>Eng ko'p yechiladigan testlar</p>
+            </div>
+            <div class="popular-tests-slider fade-in">
+                <div class="popular-test">
+                    <div class="popular-test-image">
+                        <img src="image/popular-test-1.jpg" alt="Popular Test">
+                    </div>
+                    <div class="popular-test-content">
+                        <h3>Python asoslari</h3>
+                        <div class="test-stats">
+                            <span><i class="fas fa-users"></i> 1,200+ foydalanuvchilar</span>
+                            <span><i class="fas fa-star"></i> 4.8/5 reyting</span>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-sm">Testni ko'rish</a>
+                    </div>
+                </div>
+                <div class="popular-test">
+                    <div class="popular-test-image">
+                        <img src="image/popular-test-2.jpg" alt="Popular Test">
+                    </div>
+                    <div class="popular-test-content">
+                        <h3>Ingliz tili grammatikasi</h3>
+                        <div class="test-stats">
+                            <span><i class="fas fa-users"></i> 980+ foydalanuvchilar</span>
+                            <span><i class="fas fa-star"></i> 4.7/5 reyting</span>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-sm">Testni ko'rish</a>
+                    </div>
+                </div>
+                <div class="popular-test">
+                    <div class="popular-test-image">
+                        <img src="image/popular-test-3.jpg" alt="Popular Test">
+                    </div>
+                    <div class="popular-test-content">
+                        <h3>Marketing strategiyalari</h3>
+                        <div class="test-stats">
+                            <span><i class="fas fa-users"></i> 750+ foydalanuvchilar</span>
+                            <span><i class="fas fa-star"></i> 4.6/5 reyting</span>
+                        </div>
+                        <a href="test-detail.html" class="btn btn-sm">Testni ko'rish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="fade-in">Bilimlaringizni tekshirishga tayyormisiz?</h2>
+                <p class="fade-in">Bizning testlarni yeching va o'z darajangizni aniqlang</p>
+                <a href="/signup.html" class="btn btn-cta bounce">Ro'yxatdan o'tish</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and About Section -->
+                <div class="footer-section about">
+                    <h2 class="logo-text">Online Course</h2>
+                    <p>
+                        Maqsadlaringizga erishish va martaba oshirishga yordam beradigan yuqori sifatli onlayn ta'lim va o'quv resurslarini taqdim etish.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; +123 456 7890</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@onlinecourse.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section links">
+                    <h2>Tez havolalar</h2>
+                    <ul>
+                        <li><a href="/index.html">Uy</a></li>
+                        <li><a href="/courses.html">Kurslar</a></li>
+                        <li><a href="/about.html">Biz haqimizda</a></li>
+                        <li><a href="/contact.html">Bog'lanish</a></li>
+                        <li><a href="/test.html">Testlar</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Section -->
+                <div class="footer-section categories">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-section newsletter">
+                    <h2>Obuna boʻling</h2>
+                    <p>Eng so'nggi kurslarimiz va takliflarimizdan xabardor bo'ling.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" class="text-input" placeholder="Elektorn pochtangizni kirting">
+                        <button type="submit" class="btn btn-explore">Obuna boʻling</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Onlayn kurs. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        });
+
+        // Animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fade in elements
+            const fadeElements = document.querySelectorAll('.fade-in');
+            // Slide in elements
+            const slideElements = document.querySelectorAll('.slide-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            slideElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Category tabs
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const testCards = document.querySelectorAll('.test-card');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Show/hide test cards based on category
+                    testCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Load more button
+            const loadMoreBtn = document.querySelector('.btn-load-more');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    alert('Ko\'proq testlar tez orada qo\'shiladi!');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
+

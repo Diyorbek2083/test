@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktorina - Online Course</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/viktorina.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Desktop Navigation -->
+            <div class="navbar-left">
+                <div class="logo">Online Course</div>
+                <ul class="nav-links">
+                    <li><a href="/index.html" class="nav-item">Home</a></li>
+                    <li><a href="/blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="/about.html" class="nav-item">About</a></li>
+                    <li><a href="/viktoina.html" class="nav-item active">Viktarina</a></li>
+                    <li><a href="/courses.html" class="nav-item">Courses</a></li>
+                    <li><a href="/test.html" class="nav-item">Tests</a></li>
+                    <li><a href="/contact.html" class="nav-item">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right side buttons and profile -->
+            <div class="navbar-right">
+                <a href="/signin.html"><button class="btn btn-explore">Kirsh</button></a>
+                <a href="/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+                <div class="profile">
+                    <div class="avatar">A</div>
+                    <div class="notification">1</div>
+                </div>
+            </div>
+
+            <!-- Mobile header elements -->
+            <div class="mobile-header">
+                <div class="logo">Online Course</div>
+                <div class="mobile-right">
+                    <div class="profile mobile-profile">
+                        <div class="avatar">A</div>
+                        <div class="notification">1</div>
+                    </div>
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="/index.html" class="mobile-nav-item">Home</a></li>
+                <li><a href="/blog.html" class="mobile-nav-item">Blog</a></li>
+                <li><a href="/about.html" class="mobile-nav-item">About</a></li>
+                <li><a href="/viktoina.html" class="mobile-nav-item active">Viktorina</a></li>
+                <li><a href="/courses.html" class="mobile-nav-item">Courses</a></li>
+                <li><a href="/test.html" class="mobile-nav-item">Tests</a></li>
+                <li><a href="/contact.html" class="mobile-nav-item">Contact</a></li>
+            </ul>
+            <div class="mobile-buttons">
+                <a href="/signin.html"><button class="btn btn-explore">Kirsh</button></a>
+                <a href="/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Viktorina Hero Section -->
+    <section class="viktorina-hero">
+        <div class="container">
+            <div class="viktorina-hero-content">
+                <h1 class="fade-in">Viktorina</h1>
+                <p class="fade-in">Bilimingizni sinab ko'ring va yangi narsalarni o'rganing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viktorina Categories Section -->
+    <section class="viktorina-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Viktorina kategoriyalari</h2>
+                <div class="divider"></div>
+                <p>Qiziqishingizga mos viktorinani tanlang</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card fade-in" data-category="programming">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Dasturlash</h3>
+                    <p>Dasturlash bo'yicha bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+                <div class="category-card fade-in" data-category="languages">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Tillar</h3>
+                    <p>Til bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+                <div class="category-card fade-in" data-category="science">
+                    <div class="category-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Fan</h3>
+                    <p>Fan bo'yicha bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+                <div class="category-card fade-in" data-category="history">
+                    <div class="category-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Tarix</h3>
+                    <p>Tarix bo'yicha bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+                <div class="category-card fade-in" data-category="geography">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>Geografiya</h3>
+                    <p>Geografiya bo'yicha bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+                <div class="category-card fade-in" data-category="math">
+                    <div class="category-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Matematika</h3>
+                    <p>Matematika bo'yicha bilimingizni sinab ko'ring</p>
+                    <button class="btn btn-category">Boshlash</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viktorina App Section -->
+    <section class="viktorina-app">
+        <div class="container">
+            <div class="viktorina-wrapper">
+                <!-- Start Screen -->
+                <div class="viktorina-start-screen" id="startScreen">
+                    <h2>Dasturlash viktorinasi</h2>
+                    <p>Bu viktorinada 10 ta savol bor. Har bir savolga javob berish uchun 30 soniya vaqtingiz bor.</p>
+                    <div class="rules">
+                        <h3>Qoidalar:</h3>
+                        <ul>
+                            <li>Har bir to'g'ri javob uchun 10 ball olasiz</li>
+                            <li>Noto'g'ri javob uchun ball olinmaydi</li>
+                            <li>Vaqt tugagandan so'ng avtomatik ravishda keyingi savolga o'tiladi</li>
+                            <li>Viktorina davomida orqaga qaytib bo'lmaydi</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-start" id="startBtn">Boshlash</button>
+                </div>
+
+                <!-- Quiz Screen -->
+                <div class="viktorina-quiz-screen" id="quizScreen">
+                    <div class="quiz-header">
+                        <div class="quiz-info">
+                            <span class="category">Dasturlash</span>
+                            <span class="question-count">Savol: <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span></span>
+                        </div>
+                        <div class="timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="timeLeft">30</span>
+                        </div>
+                    </div>
+                    <div class="quiz-content">
+                        <h3 class="question" id="question">JavaScript qanday dasturlash tili hisoblanadi?</h3>
+                        <div class="options">
+                            <div class="option" data-option="a">
+                                <span class="option-letter">A</span>
+                                <span class="option-text">Kompilyatsiya qilinadigan</span>
+                            </div>
+                            <div class="option" data-option="b">
+                                <span class="option-letter">B</span>
+                                <span class="option-text">Interpretatsiya qilinadigan</span>
+                            </div>
+                            <div class="option" data-option="c">
+                                <span class="option-letter">C</span>
+                                <span class="option-text">Assembler</span>
+                            </div>
+                            <div class="option" data-option="d">
+                                <span class="option-letter">D</span>
+                                <span class="option-text">Mashina tili</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-footer">
+                        <button class="btn btn-next" id="nextBtn">Keyingi savol</button>
+                    </div>
+                </div>
+
+                <!-- Result Screen -->
+                <div class="viktorina-result-screen" id="resultScreen">
+                    <div class="result-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h2>Viktorina yakunlandi!</h2>
+                    <div class="result-info">
+                        <p>Siz <span id="correctAnswers">8</span> ta savolga to'g'ri javob berdingiz</p>
+                        <p>Sizning ballingiz: <span id="score">80</span>/100</p>
+                    </div>
+                    <div class="result-actions">
+                        <button class="btn btn-restart" id="restartBtn">Qayta boshlash</button>
+                        <button class="btn btn-home" id="homeBtn">Bosh sahifaga</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Viktorinas Section -->
+    <section class="popular-viktorinas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Mashhur viktorinalar</h2>
+                <div class="divider"></div>
+                <p>Eng ko'p o'ynalgan viktorinalar</p>
+            </div>
+            <div class="viktorinas-grid">
+                <div class="viktorina-item fade-in">
+                    <div class="viktorina-image">
+                        <img src="image/viktorina-1.jpg" alt="Viktorina">
+                        <div class="viktorina-badge">Eng mashhur</div>
+                    </div>
+                    <div class="viktorina-content">
+                        <h3>Umumiy bilim viktorinasi</h3>
+                        <div class="viktorina-meta">
+                            <span><i class="fas fa-question-circle"></i> 20 savol</span>
+                            <span><i class="fas fa-users"></i> 5000+ o'yinchi</span>
+                        </div>
+                        <button class="btn btn-play">O'ynash</button>
+                    </div>
+                </div>
+                <div class="viktorina-item fade-in">
+                    <div class="viktorina-image">
+                        <img src="image/viktorina-2.jpg" alt="Viktorina">
+                    </div>
+                    <div class="viktorina-content">
+                        <h3>Tarix viktorinasi</h3>
+                        <div class="viktorina-meta">
+                            <span><i class="fas fa-question-circle"></i> 15 savol</span>
+                            <span><i class="fas fa-users"></i> 3200+ o'yinchi</span>
+                        </div>
+                        <button class="btn btn-play">O'ynash</button>
+                    </div>
+                </div>
+                <div class="viktorina-item fade-in">
+                    <div class="viktorina-image">
+                        <img src="image/viktorina-3.jpg" alt="Viktorina">
+                    </div>
+                    <div class="viktorina-content">
+                        <h3>Geografiya viktorinasi</h3>
+                        <div class="viktorina-meta">
+                            <span><i class="fas fa-question-circle"></i> 18 savol</span>
+                            <span><i class="fas fa-users"></i> 2800+ o'yinchi</span>
+                        </div>
+                        <button class="btn btn-play">O'ynash</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Eng yaxshi natijalar</h2>
+                <div class="divider"></div>
+                <p>Viktorinalarda eng yuqori natijalarni ko'rsatgan o'yinchilar</p>
+            </div>
+            <div class="leaderboard-table-wrapper fade-in">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>O'rin</th>
+                            <th>O'yinchi</th>
+                            <th>Kategoriya</th>
+                            <th>Ball</th>
+                            <th>Vaqt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first-place">
+                            <td><i class="fas fa-trophy gold"></i> 1</td>
+                            <td>
+                                <div class="player-info">
+                                    <div class="player-avatar">A</div>
+                                    <span>Alisher Karimov</span>
+                                </div>
+                            </td>
+                            <td>Dasturlash</td>
+                            <td>98/100</td>
+                            <td>2:45</td>
+                        </tr>
+                        <tr class="second-place">
+                            <td><i class="fas fa-trophy silver"></i> 2</td>
+                            <td>
+                                <div class="player-info">
+                                    <div class="player-avatar">D</div>
+                                    <span>Dilnoza Rahimova</span>
+                                </div>
+                            </td>
+                            <td>Tillar</td>
+                            <td>95/100</td>
+                            <td>3:10</td>
+                        </tr>
+                        <tr class="third-place">
+                            <td><i class="fas fa-trophy bronze"></i> 3</td>
+                            <td>
+                                <div class="player-info">
+                                    <div class="player-avatar">B</div>
+                                    <span>Bobur Alimov</span>
+                                </div>
+                            </td>
+                            <td>Tarix</td>
+                            <td>92/100</td>
+                            <td>3:25</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div class="player-info">
+                                    <div class="player-avatar">G</div>
+                                    <span>Gulnora Karimova</span>
+                                </div>
+                            </td>
+                            <td>Geografiya</td>
+                            <td>90/100</td>
+                            <td>3:40</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div class="player-info">
+                                    <div class="player-avatar">S</div>
+                                    <span>Sardor Toshmatov</span>
+                                </div>
+                            </td>
+                            <td>Matematika</td>
+                            <td>88/100</td>
+                            <td>3:55</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="fade-in">Viktorinada qatnashing va sovrinlarni yuting!</h2>
+                <p class="fade-in">Har oyda eng yuqori natijalarni ko'rsatgan o'yinchilar uchun maxsus sovrinlar</p>
+                <a href="#" class="btn btn-cta bounce">Hoziroq boshlang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and About Section -->
+                <div class="footer-section about">
+                    <h2 class="logo-text">Online Course</h2>
+                    <p>
+                        Maqsadlaringizga erishish va martaba oshirishga yordam beradigan yuqori sifatli onlayn ta'lim va o'quv resurslarini taqdim etish.
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; +123 456 7890</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@onlinecourse.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section links">
+                    <h2>Tez havolalar</h2>
+                    <ul>
+                        <li><a href="/index.html">Uy</a></li>
+                        <li><a href="/courses.html">Kurslar</a></li>
+                        <li><a href="/about.html">Biz haqimizda</a></li>
+                        <li><a href="/contact.html">Bog'lanish</a></li>
+                        <li><a href="/test.html">Testlar</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Section -->
+                <div class="footer-section categories">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-section newsletter">
+                    <h2>Obuna boʻling</h2>
+                    <p>Eng so'nggi kurslarimiz va takliflarimizdan xabardor bo'ling.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" class="text-input" placeholder="Elektorn pochtangizni kirting">
+                        <button type="submit" class="btn btn-explore">Obuna boʻling</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Onlayn kurs. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        });
+
+        // Animations on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fade in elements
+            const fadeElements = document.querySelectorAll('.fade-in');
+            // Slide in elements
+            const slideElements = document.querySelectorAll('.slide-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            slideElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Viktorina functionality
+            const startScreen = document.getElementById('startScreen');
+            const quizScreen = document.getElementById('quizScreen');
+            const resultScreen = document.getElementById('resultScreen');
+            const startBtn = document.getElementById('startBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const restartBtn = document.getElementById('restartBtn');
+            const homeBtn = document.getElementById('homeBtn');
+            const timeLeftElement = document.getElementById('timeLeft');
+            const currentQuestionElement = document.getElementById('currentQuestion');
+            const options = document.querySelectorAll('.option');
+
+            // Hide quiz and result screens initially
+            quizScreen.style.display = 'none';
+            resultScreen.style.display = 'none';
+
+            // Start quiz
+            startBtn.addEventListener('click', function() {
+                startScreen.style.display = 'none';
+                quizScreen.style.display = 'block';
+                startTimer();
+            });
+
+            // Next question
+            nextBtn.addEventListener('click', function() {
+                // For demo purposes, just show the result screen after clicking next
+                quizScreen.style.display = 'none';
+                resultScreen.style.display = 'block';
+            });
+
+            // Restart quiz
+            restartBtn.addEventListener('click', function() {
+                resultScreen.style.display = 'none';
+                startScreen.style.display = 'block';
+            });
+
+            // Go to home
+            homeBtn.addEventListener('click', function() {
+                resultScreen.style.display = 'none';
+                startScreen.style.display = 'block';
+            });
+
+            // Select option
+            options.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all options
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    // Add selected class to clicked option
+                    this.classList.add('selected');
+                });
+            });
+
+            // Timer functionality
+            function startTimer() {
+                let timeLeft = 30;
+                timeLeftElement.textContent = timeLeft;
+                
+                const timer = setInterval(function() {
+                    timeLeft--;
+                    timeLeftElement.textContent = timeLeft;
+                    
+                    if (timeLeft <= 10) {
+                        timeLeftElement.classList.add('warning');
+                    }
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(timer);
+                        // For demo purposes, just show the result screen when time is up
+                        quizScreen.style.display = 'none';
+                        resultScreen.style.display = 'block';
+                    }
+                }, 1000);
+            }
+
+            // Category selection
+            const categoryCards = document.querySelectorAll('.category-card');
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    document.querySelector('.viktorina-start-screen h2').textContent = 
+                        category.charAt(0).toUpperCase() + category.slice(1) + ' viktorinasi';
+                    
+                    // Scroll to quiz section
+                    document.querySelector('.viktorina-app').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
