@@ -322,13 +322,11 @@
   gap: 30px;
   overflow-x: auto;
   padding: 20px 0;
-  scrollbar-width: none;
-  /* Firefox */
+  scrollbar-width: none; /* Firefox */
 }
 
 .testimonials-slider::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, Edge */
+  display: none; /* Chrome, Safari, Edge */
 }
 
 .testimonial-item {
@@ -361,6 +359,16 @@
   height: 60px;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.author-info p {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .author-info h4 {
