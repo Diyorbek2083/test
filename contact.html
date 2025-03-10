@@ -7,7 +7,6 @@
     <title>Contact Us - Online Course</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -73,10 +72,28 @@
 
     <!-- Contact Hero Section -->
     <section class="contact-hero">
+        <div class="floating-elements">
+            <div class="floating-element book"><i class="fas fa-book"></i></div>
+            <div class="floating-element graduation-cap"><i class="fas fa-graduation-cap"></i></div>
+            <div class="floating-element pencil"><i class="fas fa-pencil-alt"></i></div>
+            <div class="floating-element laptop"><i class="fas fa-laptop"></i></div>
+            <div class="floating-element lightbulb"><i class="fas fa-lightbulb"></i></div>
+            <div class="floating-element certificate"><i class="fas fa-certificate"></i></div>
+        </div>
         <div class="container">
             <div class="contact-hero-content">
                 <h1 class="fade-in">Biz bilan bog'laning</h1>
                 <p class="fade-in">Savollaringiz bormi? Bizga murojaat qiling va biz sizga yordam beramiz</p>
+                <div class="hero-buttons fade-in">
+                    <a href="#contact-form" class="btn btn-primary pulse-animation">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Xabar yuborish</span>
+                    </a>
+                    <a href="#faq-section" class="btn btn-secondary">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Ko'p so'raladigan savollar</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -84,6 +101,11 @@
     <!-- Contact Info Section -->
     <section class="contact-info">
         <div class="container">
+            <div class="section-header">
+                <h2 class="slide-in">Bog'lanish ma'lumotlari</h2>
+                <div class="divider"></div>
+                <p>Quyidagi ma'lumotlar orqali biz bilan bog'lanishingiz mumkin</p>
+            </div>
             <div class="info-cards">
                 <div class="info-card fade-in">
                     <div class="info-icon">
@@ -91,6 +113,9 @@
                     </div>
                     <h3>Manzil</h3>
                     <p>Toshkent shahri, Chilonzor tumani, Bunyodkor ko'chasi, 15-uy</p>
+                    <div class="card-decoration">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
                 </div>
 
                 <div class="info-card fade-in">
@@ -100,6 +125,9 @@
                     <h3>Telefon</h3>
                     <p>+998 90 123 45 67</p>
                     <p>+998 71 234 56 78</p>
+                    <div class="card-decoration">
+                        <i class="fas fa-headset"></i>
+                    </div>
                 </div>
 
                 <div class="info-card fade-in">
@@ -109,6 +137,9 @@
                     <h3>Email</h3>
                     <p>info@onlinecourse.uz</p>
                     <p>support@onlinecourse.uz</p>
+                    <div class="card-decoration">
+                        <i class="fas fa-at"></i>
+                    </div>
                 </div>
 
                 <div class="info-card fade-in">
@@ -118,52 +149,121 @@
                     <h3>Ish vaqti</h3>
                     <p>Dushanba - Juma: 9:00 - 18:00</p>
                     <p>Shanba: 10:00 - 15:00</p>
+                    <div class="card-decoration">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact-form">
+        <div class="section-bg-decoration">
+            <div class="decoration-item"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="decoration-item"><i class="fas fa-book-open"></i></div>
+            <div class="decoration-item"><i class="fas fa-user-graduate"></i></div>
+            <div class="decoration-item"><i class="fas fa-laptop-code"></i></div>
+        </div>
         <div class="container">
             <div class="contact-form-container">
                 <div class="contact-form-header slide-in">
                     <h2>Xabar yuborish</h2>
-                    <p>Savollaringiz yoki fikrlaringiz bo'lsa, bizga yozing. Biz sizga imkon qadar tezroq javob beramiz.
-                    </p>
+                    <div class="divider"></div>
+                    <p>Savollaringiz yoki fikrlaringiz bo'lsa, bizga yozing. Biz sizga imkon qadar tezroq javob beramiz.</p>
                 </div>
                 <div class="contact-form-content">
                     <div class="contact-form fade-in">
                         <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">To'liq ism</label>
-                                <input type="text" id="name" name="name" placeholder="To'liq ismingizni kiriting"
-                                    required>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">To'liq ism <span class="required">*</span></label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="name" name="name" placeholder="To'liq ismingizni kiriting" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" name="email" placeholder="Email manzilingizni kiriting" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefon</label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingizni kiriting">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Mavzu <span class="required">*</span></label>
+                                    <div class="input-with-icon">
+                                        <i class="fas fa-tag"></i>
+                                        <input type="text" id="subject" name="subject" placeholder="Xabar mavzusini kiriting" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Email manzilingizni kiriting"
-                                    required>
+                                <label for="course-interest">Qiziqadigan kurslaringiz</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <select id="course-interest" name="course-interest">
+                                        <option value="">Kursni tanlang</option>
+                                        <option value="programming">Dasturlash</option>
+                                        <option value="design">Dizayn</option>
+                                        <option value="marketing">Marketing</option>
+                                        <option value="languages">Tillar</option>
+                                        <option value="business">Biznes</option>
+                                        <option value="other">Boshqa</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Telefon raqamingizni kiriting">
+                                <label for="message">Xabar <span class="required">*</span></label>
+                                <div class="input-with-icon textarea-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <textarea id="message" name="message" rows="6" placeholder="Xabaringizni kiriting" required></textarea>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Mavzu</label>
-                                <input type="text" id="subject" name="subject" placeholder="Xabar mavzusini kiriting"
-                                    required>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Men <a href="#">maxfiylik siyosati</a> bilan tanishdim va roziman</label>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Xabar</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Xabaringizni kiriting"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-contact">Yuborish</button>
+                            <button type="submit" class="btn btn-contact">
+                                <span>Yuborish</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
                     <div class="contact-image fade-in">
-                        <img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp" alt="Contact Us">
+                        <div class="image-container">
+                            <img src="image/contact-illustration.svg" alt="Contact Us" onerror="this.src='image/Vervet-Monkey-Foundation-credit-Kyle-2.webp'">
+                            <div class="image-decoration">
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-dots"></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-box">
+                            <h3>Tezkor bog'lanish</h3>
+                            <div class="quick-contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+998 90 123 45 67</span>
+                            </div>
+                            <div class="quick-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@onlinecourse.uz</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,66 +275,107 @@
         <div class="container">
             <div class="map-container fade-in">
                 <h2 class="slide-in">Bizning joylashuv</h2>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47931.207872505384!2d69.21954904414057!3d41.311495075484425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KfQuNC70LDQvdC30LDRgCwg0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1671187652018!5m2!1sru!2s"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="divider"></div>
+                <div class="map-wrapper">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47931.207872505384!2d69.21954904414057!3d41.311495075484425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KfQuNC70LDQvdC30LDRgCwg0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1671187652018!5m2!1sru!2s"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-info">
+                        <div class="map-info-card">
+                            <div class="map-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Bizning manzil</h3>
+                            <p>Toshkent shahri, Chilonzor tumani, Bunyodkor ko'chasi, 15-uy</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn-directions">
+                                <i class="fas fa-directions"></i>
+                                <span>Yo'nalish olish</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="faq" id="faq-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="slide-in">Ko'p so'raladigan savollar</h2>
+                <div class="divider"></div>
                 <p>Bizga eng ko'p beriladigan savollar va javoblar</p>
             </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Kursga qanday ro'yxatdan o'taman?</h3>
-                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+            <div class="faq-container">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Kursga qanday ro'yxatdan o'taman?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Kursga ro'yxatdan o'tish uchun avval saytimizda ro'yxatdan o'tishingiz kerak. Keyin kurs
+                                sahifasiga o'tib, "Kursga yozilish" tugmasini bosing va to'lov qiling. Shundan so'ng kurs
+                                materiallariga kirishingiz mumkin bo'ladi.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Kursga ro'yxatdan o'tish uchun avval saytimizda ro'yxatdan o'tishingiz kerak. Keyin kurs
-                            sahifasiga o'tib, "Kursga yozilish" tugmasini bosing va to'lov qiling. Shundan so'ng kurs
-                            materiallariga kirishingiz mumkin bo'ladi.</p>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Kursni tugatganimdan so'ng sertifikat olamanmi?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ha, barcha kurslarni muvaffaqiyatli tugatganingizdan so'ng elektron sertifikat olasiz.
+                                Sertifikatni yuklab olishingiz yoki ijtimoiy tarmoqlarda ulashishingiz mumkin.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Qanday to'lov usullari mavjud?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Biz bir nechta to'lov usullarini qabul qilamiz, jumladan bank kartalari (VISA, Mastercard),
+                                PayMe, Click, Payme va boshqalar. To'lov sahifasida barcha mavjud usullar ko'rsatilgan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Kurslar qancha vaqt davom etadi?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Har bir kursning davomiyligi kurs sahifasida ko'rsatilgan. Umumiy, kurslarimiz 4 haftadan 12
+                                haftagacha davom etadi, lekin siz o'z sur'atingizda o'qishingiz mumkin.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Agar kurs menga yoqmasa, pulimni qaytarib olishim mumkinmi?</h3>
+                            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ha, kursni sotib olganingizdan so'ng 7 kun ichida to'liq qaytarib olish kafolatini taqdim etamiz. 
+                               Agar kurs kutganingizdek bo'lmasa, bizga murojaat qiling va pullaringiz qaytariladi.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Kursni tugatganimdan so'ng sertifikat olamanmi?</h3>
-                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Ha, barcha kurslarni muvaffaqiyatli tugatganingizdan so'ng elektron sertifikat olasiz.
-                            Sertifikatni yuklab olishingiz yoki ijtimoiy tarmoqlarda ulashishingiz mumkin.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Qanday to'lov usullari mavjud?</h3>
-                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Biz bir nechta to'lov usullarini qabul qilamiz, jumladan bank kartalari (VISA, Mastercard),
-                            PayMe, Click, Payme va boshqalar. To'lov sahifasida barcha mavjud usullar ko'rsatilgan.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Kurslar qancha vaqt davom etadi?</h3>
-                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Har bir kursning davomiyligi kurs sahifasida ko'rsatilgan. Umumiy, kurslarimiz 4 haftadan 12
-                            haftagacha davom etadi, lekin siz o'z sur'atingizda o'qishingiz mumkin.</p>
+                <div class="faq-image">
+                    <img src="image/faq-illustration.svg" alt="FAQ" onerror="this.src='image/photo_2025-03-08_12-58-29.jpg'">
+                    <div class="faq-cta">
+                        <h3>Savolingiz bormi?</h3>
+                        <p>Savolingizga javob topa olmadingizmi? Bizga murojaat qiling!</p>
+                        <a href="#contact-form" class="btn-faq-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Xabar yuborish</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -242,21 +383,61 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter newsletterr">
+    <section class="newsletter newsletters">
+        <div class="floating-elements">
+            <div class="floating-element envelope"><i class="fas fa-envelope"></i></div>
+            <div class="floating-element bell"><i class="fas fa-bell"></i></div>
+            <div class="floating-element star"><i class="fas fa-star"></i></div>
+        </div>
         <div class="container">
             <div class="newsletter-container fade-in">
                 <div class="newsletter-content">
                     <h2>Yangiliklar va maxsus takliflarga obuna bo'ling</h2>
                     <p>Eng so'nggi kurslar, maxsus takliflar va ta'lim yangiliklari haqida birinchilardan bo'lib
                         xabardor bo'ling.</p>
+                    <div class="newsletter-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Yangi kurslar haqida xabardor bo'ling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Maxsus chegirmalar va aksiyalar</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Foydali ta'lim materiallari</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="newsletter-form">
-                    <input type="email" placeholder="Email manzilingizni kiriting">
-                    <button class="btn btn-subscribe">Obuna bo'lish</button>
+                    <div class="input-with-button">
+                        <input type="email" placeholder="Email manzilingizni kiriting">
+                        <button class="btn btn-subscribe">
+                            <span>Obuna bo'lish</span>
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-privacy">Obuna bo'lish orqali siz bizning <a href="#">maxfiylik siyosatimiz</a> bilan tanishganingizni va roziligingizni bildirasiz.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <div class="checkmark draw"></div>
+                </div>
+            </div>
+            <h3>Xabaringiz yuborildi!</h3>
+            <p>Xabaringiz muvaffaqiyatli yuborildi. Tez orada siz bilan bog'lanamiz.</p>
+            <button class="btn btn-modal-close">Yopish</button>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -362,6 +543,18 @@
             faqItems.forEach(item => {
                 item.addEventListener('click', () => {
                     const parent = item.parentElement;
+                    
+                    // Close all other FAQs
+                    document.querySelectorAll('.faq-item').forEach(faq => {
+                        if (faq !== parent && faq.classList.contains('active')) {
+                            faq.classList.remove('active');
+                            const icon = faq.querySelector('.faq-icon i');
+                            icon.classList.remove('fa-minus');
+                            icon.classList.add('fa-plus');
+                        }
+                    });
+                    
+                    // Toggle current FAQ
                     parent.classList.toggle('active');
 
                     // Toggle icon
@@ -378,14 +571,77 @@
 
             // Form submission
             const contactForm = document.getElementById('contactForm');
+            const successModal = document.getElementById('successModal');
+            const closeModal = document.querySelector('.close-modal');
+            const closeModalBtn = document.querySelector('.btn-modal-close');
+            
             if (contactForm) {
                 contactForm.addEventListener('submit', function (e) {
                     e.preventDefault();
                     // Here you would typically send the form data to a server
-                    alert('Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog\'lanamiz.');
+                    
+                    // Show success modal
+                    successModal.style.display = 'flex';
+                    
+                    // Reset form
                     contactForm.reset();
                 });
             }
+            
+            // Close modal
+            if (closeModal) {
+                closeModal.addEventListener('click', function() {
+                    successModal.style.display = 'none';
+                });
+            }
+            
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    successModal.style.display = 'none';
+                });
+            }
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target === successModal) {
+                    successModal.style.display = 'none';
+                }
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Floating elements animation
+            const floatingElements = document.querySelectorAll('.floating-element');
+            floatingElements.forEach(element => {
+                // Set random initial position
+                const randomX = Math.random() * 100;
+                const randomY = Math.random() * 100;
+                element.style.left = `${randomX}%`;
+                element.style.top = `${randomY}%`;
+                
+                // Set random animation duration
+                const duration = 15 + Math.random() * 20;
+                element.style.animationDuration = `${duration}s`;
+                
+                // Set random animation delay
+                const delay = Math.random() * 5;
+                element.style.animationDelay = `${delay}s`;
+            });
         });
     </script>
 </body>
