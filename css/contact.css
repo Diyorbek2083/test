@@ -255,6 +255,21 @@
   z-index: 1;
 }
 
+.info-card {
+  width: 100%;
+  max-width: 350px; /* Barcha kartalar uchun bir xil maksimal kenglik */
+  margin: 0 auto;
+  box-sizing: border-box; /* Padding va border o'lchamga qo'shilmasligi uchun */
+}
+
+/* Kartalar konteynerini markazlashtirish */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center; /* Har bir kartani o'z katakchasida markazlashtiradi */
+}
+
 .info-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -669,6 +684,11 @@
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.map iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 .map-info {
@@ -1295,9 +1315,7 @@
   }
 
   .info-card {
-    max-width: 400px;
-    margin: 0 auto;
-    width: 400px;
+    max-width: 350px; /* Mobil qurilmalarda ham bir xil maksimal kenglik */
   }
 
   .input-with-button {
@@ -1362,6 +1380,13 @@
 
   .decoration-item {
     display: none;
+  }
+
+  .newsletter-form input,
+  .btn-subscribe {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
