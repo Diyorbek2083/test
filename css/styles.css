@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  padding-top: 70px;
   background-color: #f5f5f5;
   overflow-x: hidden;
   width: 100%;
@@ -34,6 +35,12 @@ img {
   background: linear-gradient(to right, #0f1c3f, #4a1d6a);
   color: white;
   padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
@@ -49,7 +56,7 @@ img {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-right: 20px;
 }
@@ -171,7 +178,7 @@ img {
   left: 0;
   right: 0;
   background: linear-gradient(to right, #0f1c3f, #4a1d6a);
-  z-index: 1000;
+  z-index: 999;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   max-height: 0;
@@ -371,6 +378,10 @@ main h1 {
     font-size: 15px;
   }
 
+  body {
+    padding-top: 60px;
+  }
+
   .footer-section {
     flex: 45%;
   }
@@ -379,6 +390,10 @@ main h1 {
 @media (max-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  body {
+    padding-top: 55px;
   }
 
   .navbar-left,
@@ -431,7 +446,7 @@ main h1 {
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .mobile-menu {
