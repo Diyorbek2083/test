@@ -69,6 +69,17 @@ body {
   color: #666;
 }
 
+.password-toggle {
+  left: auto !important;
+  right: 15px;
+  cursor: pointer;
+  color: #999 !important;
+}
+
+.password-toggle:hover {
+  color: #0f1c3f !important;
+}
+
 .auth-form input[type="text"],
 .auth-form input[type="email"],
 .auth-form input[type="password"] {
@@ -78,6 +89,7 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   transition: border-color 0.3s;
+  padding-right: 45px; /* Add space for the eye icon */
 }
 
 .auth-form input:focus {
@@ -236,7 +248,7 @@ body {
   .auth-card {
     padding: 25px;
   }
-  
+
   .auth-header h2 {
     font-size: 1.6rem;
   }
@@ -246,41 +258,42 @@ body {
   .auth-container {
     padding: 15px;
   }
-  
+
   .auth-card {
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .auth-header h2 {
     font-size: 1.4rem;
   }
-  
+
   .auth-form input[type="text"],
   .auth-form input[type="email"],
   .auth-form input[type="password"] {
     padding: 10px 15px 10px 40px;
   }
-  
+
   .form-options {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  
+
   .forgot-password {
     margin-top: 5px;
   }
-  
+
   .btn-auth {
     padding: 10px;
   }
-  
+
   .social-auth {
     gap: 8px;
   }
-  
+
   .btn-social {
     padding: 10px;
   }
 }
+
