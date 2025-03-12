@@ -4,7 +4,8 @@
 .contact-hero {
   position: relative;
   padding: 120px 0 160px;
-  background: linear-gradient(135deg, rgba(15, 28, 63, 0.95), rgba(74, 29, 106, 0.95)), url("image/photo_2025-03-08_12-58-29.jpg") no-repeat center center;
+  background: linear-gradient(135deg, rgba(15, 28, 63, 0.95), rgba(74, 29, 106, 0.95)),
+    url("image/photo_2025-03-08_12-58-29.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   text-align: center;
@@ -12,7 +13,7 @@
 }
 
 .contact-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -55,7 +56,8 @@
   transition: opacity 0.8s 0.4s, transform 0.8s 0.4s;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -892,7 +894,7 @@
 }
 
 .newsletter::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1121,7 +1123,7 @@
   transform-origin: left top;
   border-right: 5px solid #4caf50;
   border-top: 5px solid #4caf50;
-  content: '';
+  content: "";
   left: 30px;
   top: 45px;
   position: absolute;
@@ -1195,7 +1197,7 @@
   .contact-hero-content h1 {
     font-size: 3rem;
   }
-  
+
   .section-header h2,
   .contact-form-header h2,
   .map-container h2,
@@ -1208,56 +1210,56 @@
   .contact-hero {
     padding: 100px 0 140px;
   }
-  
+
   .contact-hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .contact-form-content {
     flex-direction: column;
   }
-  
+
   .contact-image {
     order: -1;
     margin-bottom: 30px;
   }
-  
+
   .contact-image img {
     max-width: 300px;
   }
-  
+
   .newsletter-container {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .newsletter-content {
     margin-bottom: 20px;
   }
-  
+
   .form-row {
     flex-direction: column;
     gap: 0;
   }
-  
+
   .faq-container {
     flex-direction: column;
   }
-  
+
   .faq-image {
     order: -1;
     margin-bottom: 30px;
   }
-  
+
   .map-wrapper {
     flex-direction: column;
   }
-  
+
   .map-info {
     order: -1;
     margin-bottom: 30px;
   }
-  
+
   .newsletter-features {
     align-items: center;
   }
@@ -1267,50 +1269,50 @@
   .contact-hero {
     padding: 80px 0 120px;
   }
-  
+
   .contact-hero-content h1 {
     font-size: 2.2rem;
   }
-  
+
   .contact-hero-content p {
     font-size: 1rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .section-header h2,
   .contact-form-header h2,
   .map-container h2,
   .newsletter-content h2 {
     font-size: 1.8rem;
   }
-  
+
   .info-cards {
     grid-template-columns: 1fr;
   }
-  
+
   .info-card {
     max-width: 400px;
     margin: 0 auto;
     width: 400px;
   }
-  
+
   .input-with-button {
     flex-direction: column;
     border-radius: 10px;
     overflow: visible;
     box-shadow: none;
   }
-  
+
   .newsletter-form input {
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  
+
   .btn-subscribe {
     width: 100%;
     justify-content: center;
@@ -1318,7 +1320,7 @@
     padding: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-  
+
   .floating-element {
     display: none;
   }
@@ -1328,36 +1330,36 @@
   .contact-hero {
     padding: 60px 0 100px;
   }
-  
+
   .contact-hero-content h1 {
     font-size: 1.8rem;
   }
-  
+
   .contact-form-header h2,
   .map-container h2,
   .section-header h2 {
     font-size: 1.6rem;
   }
-  
+
   .contact-form input,
   .contact-form textarea,
   .contact-form select {
     padding: 12px 12px 12px 40px;
   }
-  
+
   .modal-content {
     padding: 30px 20px;
   }
-  
+
   .modal-content h3 {
     font-size: 1.5rem;
   }
-  
+
   .contact-info-box,
   .faq-cta {
     padding: 20px;
   }
-  
+
   .decoration-item {
     display: none;
   }
@@ -1365,7 +1367,11 @@
 
 /* Bounce Animation for CTA Button */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -1378,5 +1384,9 @@
 
 .bounce {
   animation: bounce 2s infinite;
+}
+
+body {
+  overflow-x: hidden;
 }
 
