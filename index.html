@@ -90,11 +90,11 @@
                     aylaning</p>
                 <div class="search-bar">
                     <input type="text" placeholder="Qanday kurs qidiryapsiz?">
-                    <button class="btn btn-search"><i class="fas fa-search"></i></button>
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="hero-buttons">
                     <a href="/test/courses.html" class="btn btn-explore">Kurslarga o'tish</a>
-                    <a href="/test/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+                    <a href="/test/signup.html" class="btn btn-register">Ro'yxatdan o'tish</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -567,6 +567,31 @@
                 }
             });
         });
+
+        // Make search bar and buttons consistent on mobile
+        function adjustMobileElements() {
+            if (window.innerWidth <= 576) {
+                const searchInput = document.querySelector('.search-bar input');
+                const searchButton = document.querySelector('.btn-search');
+                const heroButtons = document.querySelectorAll('.hero-buttons .btn');
+
+                // Set consistent height
+                const elementHeight = '45px';
+                searchInput.style.height = elementHeight;
+                searchButton.style.height = elementHeight;
+
+                heroButtons.forEach(button => {
+                    button.style.height = elementHeight;
+                    button.style.display = 'flex';
+                    button.style.alignItems = 'center';
+                    button.style.justifyContent = 'center';
+                });
+            }
+        }
+
+        // Run on page load and resize
+        window.addEventListener('load', adjustMobileElements);
+        window.addEventListener('resize', adjustMobileElements);
     </script>
     <script>
         let index = 0;
@@ -587,3 +612,4 @@
 </body>
 
 </html>
+
