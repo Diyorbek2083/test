@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Online Course</title>
+    <title>Biz haqimizda - Online Course</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Add viewport meta tag to ensure proper scaling on mobile devices -->
+    <!-- Viewport meta tag for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Add touch-action meta tag to improve touch experience -->
+    <!-- Touch action meta tag -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="image/about-hero-bg.jpg">
 </head>
 
 <body>
@@ -23,25 +23,24 @@
             <div class="navbar-left">
                 <div class="logo">Online Course</div>
                 <ul class="nav-links">
-                    <li><a href="/test/index.html" class="nav-item">Home</a></li>
-                    <li><a href="/test/blog.html" class="nav-item">Blog</a></li>
-                    <li><a href="/test/about.html" class="nav-item active">About</a></li>
-                    <li><a href="/test/viktorina.html" class="nav-item">Viktarina</a></li>
-                    <li><a href="/test/courses.html" class="nav-item">Courses</a></li>
-                    <li><a href="/test/test.html" class="nav-item">Tests</a></li>
-                    <li><a href="/test/contact.html" class="nav-item">Contact</a></li>
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="blog.html" class="nav-item">Blog</a></li>
+                    <li><a href="about.html" class="nav-item active">Biz haqimizda</a></li>
+                    <li><a href="viktorina.html" class="nav-item">Viktorina</a></li>
+                    <li><a href="courses.html" class="nav-item">Kurslar</a></li>
+                    <li><a href="test.html" class="nav-item">Testlar</a></li>
+                    <li><a href="contact.html" class="nav-item">Bog'lanish</a></li>
                 </ul>
             </div>
 
             <!-- Right side buttons and profile -->
             <div class="navbar-right">
-                <a href="/test/signin.html"><button class="btn btn-explore">Kirsh</button></a>
-                <a href="/test/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
+                <a href="signin.html"><button class="btn btn-explore">Kirish</button></a>
+                <a href="signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
                 <div class="profile">
                     <div class="avatar">
-                        <a href="/test/profile.html">
-                            <div class="avatar"><img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp"
-                                    alt="Profile Picture"></div>
+                        <a href="profile.html">
+                            <div class="avatar"><img src="image/profile-avatar.jpg" alt="Profil rasmi"></div>
                         </a>
                     </div>
                     <div class="notification">1</div>
@@ -53,9 +52,8 @@
                 <div class="logo">Online Course</div>
                 <div class="mobile-right">
                     <div class="profile mobile-profile">
-                        <div class="avatar"><a href="/test/profile.html">
-                                <div class="avatar"><img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp"
-                                        alt="Profile Picture"></div>
+                        <div class="avatar"><a href="profile.html">
+                                <div class="avatar"><img src="image/profile-avatar.jpg" alt="Profil rasmi"></div>
                             </a></div>
                         <div class="notification">1</div>
                     </div>
@@ -71,14 +69,14 @@
             <ul class="mobile-nav-links">
                 <li><a href="/test/index.html" class="mobile-nav-item">Home</a></li>
                 <li><a href="/test/blog.html" class="mobile-nav-item">Blog</a></li>
-                <li><a href="/test/about.html" class="mobile-nav-item active">About</a></li>
+                <li><a href="/test/about.html" class="mobile-nav-item active">Biz haqimizda</a></li>
                 <li><a href="/test/viktorina.html" class="mobile-nav-item">Viktorina</a></li>
-                <li><a href="/test/courses.html" class="mobile-nav-item">Courses</a></li>
-                <li><a href="/test/test.html" class="mobile-nav-item">Tests</a></li>
-                <li><a href="/test/contact.html" class="mobile-nav-item">Contact</a></li>
+                <li><a href="/test/courses.html" class="mobile-nav-item">Kurslar</a></li>
+                <li><a href="/test/test.html" class="mobile-nav-item">Testlar</a></li>
+                <li><a href="/test/contact.html" class="mobile-nav-item">Bog'lanish</a></li>
             </ul>
             <div class="mobile-buttons">
-                <a href="/test/signin.html"><button class="btn btn-explore">Kirsh</button></a>
+                <a href="/test/signin.html"><button class="btn btn-explore">Kirish</button></a>
                 <a href="/test/signup.html"><button class="btn btn-register">Ro'yxatdan o'tish</button></a>
             </div>
         </div>
@@ -91,12 +89,13 @@
                 <h1 class="fade-in">Biz haqimizda</h1>
                 <p class="fade-in">Online Course platformasi - bu zamonaviy bilimlarni o'rganish va kasbiy ko'nikmalarni
                     rivojlantirish uchun yaratilgan innovatsion ta'lim muhiti</p>
+                <a href="#our-story" class="btn btn-hero fade-in">Ko'proq bilish</a>
             </div>
         </div>
     </section>
 
     <!-- Our Story Section -->
-    <section class="our-story">
+    <section id="our-story" class="our-story">
         <div class="container">
             <div class="section-header">
                 <h2 class="slide-in">Bizning tarix</h2>
@@ -104,7 +103,7 @@
             </div>
             <div class="story-content">
                 <div class="story-image fade-in">
-                    <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Our Story">
+                    <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Bizning tarix rasmi">
                 </div>
                 <div class="story-text slide-in">
                     <p>Online Course platformasi 2018-yilda bir guruh ta'lim sohasidagi mutaxassislar tomonidan tashkil
@@ -134,9 +133,10 @@
                         orqali jamiyatning rivojlanishiga hissa qo'shish.</p>
                     <p>Biz har bir insonning o'z potentsialini to'liq ochib berishi va o'z sohasida yetakchi
                         mutaxassisga aylanishi uchun zarur bilim va ko'nikmalarni berishga intilamiz.</p>
+                    <p>Bizning platformamiz orqali o'quvchilar nafaqat nazariy bilimlarni, balki amaliy ko'nikmalarni ham egallaydilar. Bu esa ularning mehnat bozorida raqobatbardoshligini oshiradi.</p>
                 </div>
                 <div class="mission-image fade-in">
-                    <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Our Mission">
+                    <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Bizning vazifamiz rasmi">
                 </div>
             </div>
         </div>
@@ -150,28 +150,28 @@
                 <div class="divider"></div>
             </div>
             <div class="values-grid">
-                <div class="value-item fade-in">
+                <div class="value-item fade-in" style="transition-delay: 0.1s;">
                     <div class="value-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Sifatli ta'lim</h3>
                     <p>Biz eng yuqori sifatli ta'lim materiallarini taqdim etishga intilamiz</p>
                 </div>
-                <div class="value-item fade-in">
+                <div class="value-item fade-in" style="transition-delay: 0.2s;">
                     <div class="value-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Hamkorlik</h3>
                     <p>Biz o'quvchilar va o'qituvchilar o'rtasida samarali hamkorlikni ta'minlaymiz</p>
                 </div>
-                <div class="value-item fade-in">
+                <div class="value-item fade-in" style="transition-delay: 0.3s;">
                     <div class="value-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Innovatsiya</h3>
                     <p>Biz doimo yangi g'oyalar va texnologiyalarni joriy etishga intilamiz</p>
                 </div>
-                <div class="value-item fade-in">
+                <div class="value-item fade-in" style="transition-delay: 0.4s;">
                     <div class="value-icon">
                         <i class="fas fa-heart"></i>
                     </div>
@@ -191,59 +191,59 @@
                 <p>Bizning jamoamiz tajribali va malakali mutaxassislardan iborat</p>
             </div>
             <div class="team-grid">
-                <div class="team-member fade-in">
+                <div class="team-member fade-in" style="transition-delay: 0.1s;">
                     <div class="member-image">
-                        <img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp" alt="Team Member">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Alisher Karimov rasmi">
                     </div>
                     <div class="member-info">
                         <h3>Alisher Karimov</h3>
                         <p class="member-position">Asoschisi va CEO</p>
                         <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="team-member fade-in">
+                <div class="team-member fade-in" style="transition-delay: 0.2s;">
                     <div class="member-image">
-                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Team Member">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Dilnoza Rahimova rasmi">
                     </div>
                     <div class="member-info">
                         <h3>Dilnoza Rahimova</h3>
                         <p class="member-position">Ta'lim bo'limi direktori</p>
                         <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="team-member fade-in">
+                <div class="team-member fade-in" style="transition-delay: 0.3s;">
                     <div class="member-image">
-                        <img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp" alt="Team Member">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Bobur Alimov rasmi">
                     </div>
                     <div class="member-info">
                         <h3>Bobur Alimov</h3>
                         <p class="member-position">Texnologiya bo'limi direktori</p>
                         <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="team-member fade-in">
+                <div class="team-member fade-in" style="transition-delay: 0.4s;">
                     <div class="member-image">
-                        <img src="image/Vervet-Monkey-Foundation-credit-Kyle-2.webp" alt="Team Member">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Gulnora Karimova rasmi">
                     </div>
                     <div class="member-info">
                         <h3>Gulnora Karimova</h3>
                         <p class="member-position">Marketing bo'limi direktori</p>
                         <div class="member-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
@@ -259,28 +259,28 @@
                 <div class="divider"></div>
             </div>
             <div class="achievements-grid">
-                <div class="achievement-item fade-in">
+                <div class="achievement-item fade-in" style="transition-delay: 0.1s;">
                     <div class="achievement-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div class="achievement-number" data-count="15">0</div>
                     <div class="achievement-text">Mukofotlar</div>
                 </div>
-                <div class="achievement-item fade-in">
+                <div class="achievement-item fade-in" style="transition-delay: 0.2s;">
                     <div class="achievement-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
                     <div class="achievement-number" data-count="10000">0</div>
                     <div class="achievement-text">O'quvchilar</div>
                 </div>
-                <div class="achievement-item fade-in">
+                <div class="achievement-item fade-in" style="transition-delay: 0.3s;">
                     <div class="achievement-icon">
                         <i class="fas fa-book"></i>
                     </div>
                     <div class="achievement-number" data-count="200">0</div>
                     <div class="achievement-text">Kurslar</div>
                 </div>
-                <div class="achievement-item fade-in">
+                <div class="achievement-item fade-in" style="transition-delay: 0.4s;">
                     <div class="achievement-icon">
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
@@ -295,7 +295,8 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>O'quvchilarimiz fikrlari</h2>
+                <h2 class="slide-in">O'quvchilarimiz fikrlari</h2>
+                <div class="divider"></div>
                 <p>Platformamiz haqida nima deyishadi</p>
             </div>
             <div class="testimonials-slider">
@@ -305,7 +306,7 @@
                             amaliy."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="O'quvchi">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Aziza Rahimova rasmi">
                         <div class="author-info">
                             <h4>Aziza Rahimova</h4>
                             <p>Web dasturchi</p>
@@ -319,7 +320,7 @@
                             ham juda yaxshi tushuntiradi."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="O'quvchi">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Bobur Aliyev rasmi">
                         <div class="author-info">
                             <h4>Bobur Aliyev</h4>
                             <p>Marketing mutaxassisi</p>
@@ -333,13 +334,33 @@
                             minnatdorman!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="O'quvchi">
+                        <img src="image/photo_2025-03-08_12-58-29.jpg" alt="Malika Umarova rasmi">
                         <div class="author-info">
                             <h4>Malika Umarova</h4>
                             <p>Talaba</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" aria-label="Oldingi"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot active"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                </div>
+                <button class="testimonial-next" aria-label="Keyingi"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="fade-in">Bizning jamoaga qo'shiling</h2>
+                <p class="fade-in">Bugun ro'yxatdan o'ting va 200+ kurslardan foydalanishni boshlang</p>
+                <a href="/test/signup.html" class="btn btn-cta fade-in">Ro'yxatdan o'tish</a>
             </div>
         </div>
     </section>
@@ -356,15 +377,15 @@
                         o'quv resurslarini taqdim etish.
                     </p>
                     <div class="contact">
-                        <span><i class="fas fa-phone"></i> &nbsp; +123 456 7890</span>
-                        <span><i class="fas fa-envelope"></i> &nbsp; info@onlinecourse.com</span>
+                        <span><i class="fas fa-phone"></i> &nbsp; +998 90 123 4567</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@onlinecourse.uz</span>
                     </div>
                     <div class="socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -383,13 +404,13 @@
 
                 <!-- Categories Section -->
                 <div class="footer-section categories">
-                    <h2>Categories</h2>
+                    <h2>Kategoriyalar</h2>
                     <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Mobile Apps</a></li>
-                        <li><a href="#">Data Science</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Web dasturlash</a></li>
+                        <li><a href="#">Mobil ilovalar</a></li>
+                        <li><a href="#">Ma'lumotlar ilmi</a></li>
+                        <li><a href="#">Biznes</a></li>
+                        <li><a href="#">Dizayn</a></li>
                         <li><a href="#">Marketing</a></li>
                     </ul>
                 </div>
@@ -399,7 +420,7 @@
                     <h2>Obuna boʻling</h2>
                     <p>Eng so'nggi kurslarimiz va takliflarimizdan xabardor bo'ling.</p>
                     <form action="#" method="post">
-                        <input type="email" name="email" class="text-input" placeholder="Elektorn pochtangizni kirting">
+                        <input type="email" name="email" class="text-input" placeholder="Elektorn pochtangizni kirting" required>
                         <button type="submit" class="btn btn-explore">Obuna boʻling</button>
                     </form>
                 </div>
@@ -413,6 +434,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Yuqoriga qaytish"><i class="fas fa-arrow-up"></i></button>
 
     <script>
         // Toggle mobile menu
@@ -449,18 +473,23 @@
             function animateCounter(element) {
                 const target = parseInt(element.getAttribute('data-count'));
                 const duration = 2000; // 2 seconds
-                const step = target / (duration / 16); // 60fps
-                let current = 0;
+                let startTime = null;
 
-                const timer = setInterval(() => {
-                    current += step;
-                    if (current > target) {
-                        element.textContent = target;
-                        clearInterval(timer);
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / duration, 1);
+                    const currentValue = Math.floor(progress * target);
+                    
+                    element.textContent = currentValue.toLocaleString();
+                    
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
                     } else {
-                        element.textContent = Math.floor(current);
+                        element.textContent = target.toLocaleString();
                     }
-                }, 16);
+                }
+
+                window.requestAnimationFrame(step);
             }
 
             const achievementObserver = new IntersectionObserver((entries) => {
@@ -475,8 +504,67 @@
             achievementNumbers.forEach(number => {
                 achievementObserver.observe(number);
             });
+
+            // Testimonial slider
+            const testimonialSlider = document.querySelector('.testimonials-slider');
+            const testimonialItems = document.querySelectorAll('.testimonial-item');
+            const testimonialDots = document.querySelectorAll('.testimonial-dot');
+            const prevButton = document.querySelector('.testimonial-prev');
+            const nextButton = document.querySelector('.testimonial-next');
+            
+            let currentIndex = 0;
+            const itemWidth = testimonialItems[0].offsetWidth;
+            
+            function updateSlider() {
+                testimonialSlider.style.transform = `translateX(-${currentIndex * (itemWidth + 20)}px)`;
+                
+                // Update dots
+                testimonialDots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            if (prevButton && nextButton) {
+                prevButton.addEventListener('click', () => {
+                    currentIndex = Math.max(0, currentIndex - 1);
+                    updateSlider();
+                });
+                
+                nextButton.addEventListener('click', () => {
+                    currentIndex = Math.min(testimonialItems.length - 1, currentIndex + 1);
+                    updateSlider();
+                });
+                
+                testimonialDots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        currentIndex = index;
+                        updateSlider();
+                    });
+                });
+            }
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            if (backToTopButton) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+                
+                backToTopButton.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
         });
     </script>
 </body>
 
 </html>
+
